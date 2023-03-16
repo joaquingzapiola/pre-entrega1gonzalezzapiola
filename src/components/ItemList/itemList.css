@@ -1,0 +1,23 @@
+div.products-container {
+    padding: 1rem;
+  }
+  
+  ul.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 5rem;
+    position: relative;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: .25rem;
+}
+
+.card{
+    padding: 5px;
+    display: flex;
+flex-direction: row;
+}
