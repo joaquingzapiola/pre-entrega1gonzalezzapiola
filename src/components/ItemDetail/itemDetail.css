@@ -1,0 +1,18 @@
+.imgCardDetail{
+    height: 19rem;
+border-radius: 5px;
+}
+
+.divItemDetail{
+    margin-top: 8rem;
+    margin-bottom: 2rem; 
+    width: 50%;
+    margin-left: 25%;
+    border: 1px solid #0d0d0d;
+}
+
+.pItemDetail{
+    margin-top: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}

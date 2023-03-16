@@ -1,19 +1,22 @@
-div.products-container {
+div.contenedorItemList {
     padding: 1rem;
+    display: flex;
   }
   
-  ul.products-list {
+  ul.productosItemList {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-top: 5rem;
+    gap: 6.5rem;
+    margin-top: 6rem;
     position: relative;
-    flex-direction: column;
+    flex-direction: row;
     min-width: 0;
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
     border-radius: .25rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .card{

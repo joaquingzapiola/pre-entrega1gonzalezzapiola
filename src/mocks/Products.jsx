@@ -9,7 +9,7 @@ export default [
     id: 1,
     name: "Bariloche - Rio Negro",
     longDescription:
-      "14 días en Bariloche con todo incluido p/cuatro personas (*incluye transporte)",
+      "Disfruta de 14 días en Bariloche con todo incluido p/cuatro personas (*incluye transporte). El paquete incluye alojamiento en hotel 5 estrellas con todos los servicios y comodidades para que puedas disfrutar al máximo de tu estancia en Bariloche. El hotel está ubicado en un lugar privilegiado, rodeado de la majestuosa belleza natural de la Patagonia. Durante estos dos días tendrás la oportunidad de disfrutar visitando los mejores lugares de Bariloche. Puedes visitar el Cerro Catedral y disfrutar de una hermosa vista de la ciudad y los lagos. Puedes caminar por el Parque Nacional Nahuel Huapi y admirar la belleza de la naturaleza. ",
     stock: 4,
     pictureUrl: imagen1,
     price: "$250.000",

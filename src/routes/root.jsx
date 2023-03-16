@@ -4,6 +4,7 @@ import { NavBar } from "../components/NavBar";
 import { ItemListContainer } from "../components/ItemListContainer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./root.css";
+import Footer from "../components/Footer";
 
 function Root() {
   const params = useParams();
@@ -21,6 +22,7 @@ function Root() {
         isCategoryRoute={isCategoryRoute}
         categoryId={params.id}
       />
+      <Footer />
     </div>
   );
 }

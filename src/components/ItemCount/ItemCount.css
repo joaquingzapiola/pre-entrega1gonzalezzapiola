@@ -3,10 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
 }  
 .count-container__contador {
     display: grid;
@@ -24,6 +21,7 @@
     height: 100%;
     font-size: 1.6rem;
     transition: all 250ms ease-out;
+    border-radius: 9px;
 }
   
   .count-container__button:hover {
@@ -38,6 +36,7 @@
     background-color: transparent;
     border: 1px solid rgb(255, 0, 0);
     cursor: not-allowed;
+    border-radius: 9px;
   }
   
 .count-container__qty {
@@ -52,6 +51,7 @@
 
 .buttonAñadir{
     margin-left: 52px;
+    border-radius: 8px;
 }
 
 .buttonAñadir:hover {

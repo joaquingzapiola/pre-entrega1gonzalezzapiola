@@ -3,8 +3,8 @@ import "./itemList.css";
 
 function ItemList({ products }) {
   return (
-    <div className="products-container">
-      <ul className="products-list">
+    <div className="contenedorItemList">
+      <ul className="productosItemList">
         {products.map((product, index) => (
           <Item product={product} key={product.id} />
         ))}

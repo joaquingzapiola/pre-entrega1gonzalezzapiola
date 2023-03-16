@@ -7,7 +7,7 @@ function ItemDetailContainer({ detalleProducto }) {
   const [product, setProducto] = useState({});
 
   useEffect(() => {
-    const productoDetail = product.find(
+    const productoDetail = Products.find(
       (product) => product.id == detalleProducto
     );
     setProducto(productoDetail);
