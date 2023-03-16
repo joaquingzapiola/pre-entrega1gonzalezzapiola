@@ -4,10 +4,6 @@ import { useEffect, useState } from "react";
 import ItemList from "../ItemList";
 
 export const ItemListContainer = ({ categoryId, isCategoryRoute }) => {
-  /*  const onAdd = (qty) => {
-    alert(`Agregaste ${qty} productos`);
-  };*/
-
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -32,7 +28,6 @@ export const ItemListContainer = ({ categoryId, isCategoryRoute }) => {
   return (
     <div>
       <ItemList products={products} />
-      {/*<ItemCount onAdd={onAdd} initial={0} stock={10} />*/}
     </div>
   );
 };
