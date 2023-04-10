@@ -36,42 +36,23 @@ export default function App() {
 
         <section className="mb-4">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            distinctio earum repellat quaerat voluptatibus placeat nam, commodi
-            optio pariatur est quia magnam eum harum corrupti dicta, aliquam
-            sequi voluptate quas.
+            ¡Bienvenido a nuestra agencia de viajes en Argentina! Ofrecemos una
+            amplia variedad de paquetes turísticos diseñados para satisfacer tus
+            necesidades de viaje. Desde la vibrante ciudad de Buenos Aires hasta
+            las impresionantes cataratas del Iguazú, tenemos todo lo que
+            necesitas para vivir la mejor experiencia de viaje en Argentina.{" "}
+            <br />
+            Nuestros paquetes turísticos incluyen alojamiento de alta calidad,
+            transporte seguro y confiable, guías expertos y actividades
+            emocionantes para que puedas disfrutar al máximo de tu viaje. <br />
+            Además, trabajamos con los mejores proveedores locales para
+            ofrecerte precios competitivos y garantizar la satisfacción de
+            nuestros clientes. Ya sea que estés interesado en explorar la
+            naturaleza en la Patagonia, disfrutar de la gastronomía local en
+            Mendoza o descubrir la rica cultura del norte de Argentina, tenemos
+            el paquete perfecto para ti. ¡No esperes más y reserva tu viaje con
+            nosotros hoy mismo!
           </p>
-        </section>
-
-        <section className="">
-          <MDBRow>
-            <MDBCol lg="3" md="6" className="mb-4 mb-md-0">
-              <h5 className="text-uppercase">Links</h5>
-
-              <ul className="list-unstyled mb-0">
-                <li>
-                  <a href="#!" className="text-white">
-                    Link 1
-                  </a>
-                </li>
-                <li>
-                  <a href="#!" className="text-white">
-                    Link 2
-                  </a>
-                </li>
-                <li>
-                  <a href="#!" className="text-white">
-                    Link 3
-                  </a>
-                </li>
-                <li>
-                  <a href="#!" className="text-white">
-                    Link 4
-                  </a>
-                </li>
-              </ul>
-            </MDBCol>
-          </MDBRow>
         </section>
       </MDBContainer>
 
