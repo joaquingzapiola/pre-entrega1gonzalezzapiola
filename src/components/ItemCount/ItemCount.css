@@ -61,3 +61,19 @@
   border: 1px solid #272222;
   transition: all 250ms ease-out;
 }
+
+.buttonVolver{
+  margin-top: 5px;
+  margin-left: 52px;
+  border-radius: 8px;
+}
+
+.aVolver{
+text-decoration: none;
+color: #ffffff;
+}
+
+.aVolver:hover{
+  text-decoration: none;
+  color: #ffffff;
+  }

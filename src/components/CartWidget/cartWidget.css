@@ -1,0 +1,29 @@
+.cartWidget {
+    position: relative;
+  }
+  
+  .imgWidget {
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid #61b3ff;
+    border-radius: 35%;
+    padding: 4px;
+  }
+  
+  .spanWidget{
+    position: absolute;
+    top: 5px;
+    right: 287px;
+  background-color: #61b3ff;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  padding: 2px 6px;
+  border-radius: 50%;
+  }
+  
+  .imgWidget:hover {
+    background-color: #FF6F61;
+    color: white;
+  }

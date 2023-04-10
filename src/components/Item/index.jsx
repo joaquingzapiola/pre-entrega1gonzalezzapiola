@@ -9,12 +9,11 @@ function Item({ product }) {
       <Card.Img
         style={{ height: "19rem" }}
         variant="bottom"
-        src={product.pictureUrl}
+        src={product.image}
       />
       <Card.Body className="cardItem">
-        <Card.Title>{product.name}</Card.Title>
+        <Card.Title>{product.title}</Card.Title>
         <Card.Text>Stock: {product.stock}</Card.Text>
-        <Button variant="outline-dark">Agregar al carrito</Button>
         <div style={{ marginTop: "1rem" }}>
           <NavLink className="aBotonDetalle" to={`/item/${product.id}`}>
             Detalle

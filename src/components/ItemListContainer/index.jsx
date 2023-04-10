@@ -1,28 +1,40 @@
-import { ItemCount } from "../ItemCount";
-import Products from "../../mocks/Products";
 import { useEffect, useState } from "react";
 import ItemList from "../ItemList";
+import {
+  Firestore,
+  collection,
+  getDocs,
+  getFirestore,
+  query,
+  where,
+} from "firebase/firestore";
 
 export const ItemListContainer = ({ categoryId, isCategoryRoute }) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    const productsPromise = new Promise((resolve, reject) =>
-      setTimeout(() => resolve(Products), 2000)
-    );
+    const db = getFirestore();
+    const itemsCollection = collection(db, "items");
 
-    productsPromise
-      .then((response) => {
-        if (isCategoryRoute) {
-          const productsFiltered = response.filter(
-            (product) => product.category === categoryId
-          );
-          setProducts(productsFiltered);
-        } else {
-          setProducts(response);
-        }
-      })
-      .catch((err) => console.log(err));
+    if (isCategoryRoute) {
+      const queryResult = query(
+        itemsCollection,
+        where("categroy", "==", categoryId)
+      );
+      getDocs(queryResult)
+        .then((snapshot) => {
+          const docs = snapshot.docs;
+          setProducts(docs.map((doc) => ({ id: doc.id, ...doc.data() })));
+        })
+        .catch((error) => console.log({ error }));
+    } else {
+      getDocs(itemsCollection)
+        .then((snapshot) => {
+          const docs = snapshot.docs;
+          setProducts(docs.map((doc) => ({ id: doc.id, ...doc.data() })));
+        })
+        .catch((error) => console.log({ error }));
+    }
   }, [categoryId]);
 
   return (

@@ -1,5 +1,7 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import "./ItemCount.css";
+import { NavLink } from "react-router-dom";
+import { Context } from "../../context";
 
 export const ItemCount = ({ onAdd, initial, stock }) => {
   const [qty, setQty] = useState(initial);
@@ -7,6 +9,8 @@ export const ItemCount = ({ onAdd, initial, stock }) => {
   const addProduct = (num) => {
     setQty(qty + num);
   };
+
+  const { onAdded, onRemove } = useContext(Context);
 
   return (
     <div className="count-container">
@@ -29,12 +33,18 @@ export const ItemCount = ({ onAdd, initial, stock }) => {
       </div>
       <button
         className="buttonAñadir"
-        onClick={() => {
-          onAdd(qty);
-        }}
-        disabled={stock === 0 ? true : null}
+        onClick={() => onAdd(qty)}
+        disabled={qty === stock + 1}
       >
         Añadir productos
+      </button>
+      <button className="buttonAñadir" onClick={onRemove}>
+        Remover productos
+      </button>
+      <button className="buttonVolver">
+        <NavLink className="aVolver" to="/">
+          Volver
+        </NavLink>
       </button>
     </div>
   );
