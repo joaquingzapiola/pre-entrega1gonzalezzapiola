@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-import "../App.css";
 import { NavBar } from "../components/NavBar";
 import { ItemListContainer } from "../components/ItemListContainer";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -15,8 +14,8 @@ function Root() {
     <div className="App">
       <NavBar />
       <div className="divRoot">
-        <h1>Viajar</h1>
-        <p>Tu página definitiva</p>
+        <h1 className="titleRoot">Viajar</h1>
+        <p className="titleRoot">Tu página definitiva</p>
       </div>
       <ItemListContainer
         isCategoryRoute={isCategoryRoute}

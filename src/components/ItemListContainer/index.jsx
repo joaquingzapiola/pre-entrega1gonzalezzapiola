@@ -8,9 +8,11 @@ import {
   query,
   where,
 } from "firebase/firestore";
+import { BarLoader } from "react-spinners";
 
 export const ItemListContainer = ({ categoryId, isCategoryRoute }) => {
   const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const db = getFirestore();
@@ -39,7 +41,11 @@ export const ItemListContainer = ({ categoryId, isCategoryRoute }) => {
 
   return (
     <div>
-      <ItemList products={products} />
+      {loading ? (
+        <BarLoader color={"#123abc"} loading={true} />
+      ) : (
+        <ItemList products={products} />
+      )}
     </div>
   );
 };
